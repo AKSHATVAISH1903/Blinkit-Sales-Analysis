@@ -1,57 +1,91 @@
-# Coffee Shop Sales Analysis
+# Blinkit Sales Analysis Project
 
-## Overview
-This project involves analyzing coffee shop sales data to derive insights and trends that can inform business decisions. The analysis was conducted using MySQL for data management and querying, and PowerBI for creating dynamic visualizations and dashboards.
+## Project Overview
 
-## Project Structure
-- **SQL Tasks**
-  - Data Walkthrough
-  - Raw Data File Preparation
-  - Database Creation
-  - Data Import
-  - Data Cleaning
-  - Data Type Conversion
-  - SQL Query Execution for Business Metrics
-  - Storing Query Results
-  - SQL Documentation
+This project aims to conduct a comprehensive analysis of Blinkit's sales performance, customer satisfaction, and inventory distribution. Using Power BI, we analyze various KPIs and visualizations to identify key insights and opportunities for optimization.
 
-- **PowerBI Tasks**
-  - Problem Statement
-  - KPI Calculations:
-    - Total Sales Analysis
-    - Total Orders Analysis
-    - Total Quantity Sold Analysis
-  - Chart Creation:
-    - Calendar Heat Map
-    - Sales Analysis by Weekdays and Weekends
-    - Sales Analysis by Store Location
-    - Daily Sales Analysis with Average Line
-    - Sales Analysis by Product Category
-    - Top 10 Products by Sales
-    - Sales Analysis by Days and Hours
+## Steps in the Project
 
-## MySQL Details
-1. **Data Walkthrough:** Analyzed the raw sales data structure.
-2. **Raw Data Preparation:** Prepared and formatted raw data for import.
-3. **Database Creation:** Created a MySQL database to store sales data.
-4. **Data Import:** Imported the sales data into the MySQL database.
-5. **Data Cleaning:** Cleaned data (e.g., converted dates and times to proper formats).
-6. **Data Type Conversion:** Optimized data storage by changing data types.
-7. **SQL Queries:** Ran SQL queries to calculate key metrics, including total sales, orders, quantity sold, and month-over-month (MoM) growth.
-8. **Results Storage:** Stored query results for further analysis.
-9. **SQL Documentation:** Documented SQL queries and their explanations.
+1. **Requirement Gathering / Business Requirements**
+   - Gathered and defined the business requirements for analysis.
 
-## PowerBI Details
-1. **Problem Statement:** Focused on analyzing sales, orders, and quantity sold.
-2. **KPI Calculations:**
-   - Total sales per month, MoM changes, and trends.
-   - Total orders per month, MoM changes.
-   - Total quantity sold, MoM changes.
-3. **Charts and Visualizations:**
-   - **Calendar Heat Map:** Visualizes daily sales with tooltips showing detailed metrics.
-   - **Sales by Weekdays and Weekends:** Compares sales between weekdays and weekends.
-   - **Sales by Store Location:** Visualizes sales by location with MoM metrics.
-   - **Daily Sales with Average Line:** Shows daily sales trends with an average line and highlights exceptional days.
-   - **Sales by Product Category:** Analyzes sales by product categories.
-   - **Top 10 Products by Sales:** Displays the top 10 best-selling products.
-   - **Sales by Days and Hours:** Uses a heat map to visualize sales patterns by days and hours.
+2. **Data Walkthrough**
+   - Reviewed the data to understand its structure and content.
+
+3. **Data Connection**
+   - Connected to the relevant data sources.
+
+4. **Data Cleaning / Quality Check**
+   - Cleaned and checked the data for quality issues.
+
+5. **Data Modeling**
+   - Developed the data model for analysis.
+
+6. **Data Processing**
+   - Processed the data for use in visualizations.
+
+7. **DAX Calculations**
+   - Implemented DAX calculations for metrics and KPIs.
+
+8. **Dashboard Layouting**
+   - Designed the layout for the dashboard.
+
+9. **Charts Development and Formatting**
+   - Developed and formatted charts to visualize data.
+
+10. **Dashboard / Report Development**
+    - Created and refined the dashboard/report.
+
+11. **Insights Generation**
+    - Generated actionable insights from the data.
+
+## Business Requirements
+
+To analyze Blinkit's sales performance, customer satisfaction, and inventory distribution using Power BI. The goal is to identify key insights and opportunities for optimization through various KPIs and visualizations.
+
+### KPI Requirements
+
+1. **Total Sales**
+   - Overall revenue generated from all items sold.
+
+2. **Average Sales**
+   - Average revenue per sale.
+
+3. **Number of Items**
+   - Total count of different items sold.
+
+4. **Average Rating**
+   - Average customer rating for items sold.
+
+### Chart Requirements
+
+1. **Total Sales by Fat Content**
+   - **Objective:** Analyze the impact of fat content on total sales.
+   - **Additional KPI Metrics:** Assess how other KPIs (Average Sales, Number of Items, Average Rating) vary with fat content.
+   - **Chart Type:** Donut Chart.
+
+2. **Total Sales by Item Type**
+   - **Objective:** Identify the performance of different item types in terms of total sales.
+   - **Additional KPI Metrics:** Assess how other KPIs (Average Sales, Number of Items, Average Rating) vary with item type.
+   - **Chart Type:** Bar Chart.
+
+3. **Fat Content by Outlet for Total Sales**
+   - **Objective:** Compare total sales across different outlets segmented by fat content.
+   - **Additional KPI Metrics:** Assess how other KPIs (Average Sales, Number of Items, Average Rating) vary with fat content.
+   - **Chart Type:** Stacked Column Chart.
+
+4. **Total Sales by Outlet Establishment**
+   - **Objective:** Evaluate how the age or type of outlet establishment influences total sales.
+   - **Chart Type:** Line Chart.
+
+5. **Sales by Outlet Size**
+   - **Objective:** Analyze the correlation between outlet size and total sales.
+   - **Chart Type:** Donut/Pie Chart.
+
+6. **Sales by Outlet Location**
+   - **Objective:** Assess the geographic distribution of sales across different locations.
+   - **Chart Type:** Funnel Map.
+
+7. **All Metrics by Outlet Type**
+   - **Objective:** Provide a comprehensive view of all key metrics (Total Sales, Average Sales, Number of Items, Average Rating) broken down by different outlet types.
+   - **Chart Type:** Matrix Card.
